@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+	function car(make,model,year){
+		this.make = make;
+		this.model = model;
+		this.year = year;	
+	}
+	var carObj1 = new car("BMW","BMW 3Series","1975");
+	var carObj2 = new car("Audi","Q3","2000");
+	document.getElementById("demo").innerHTML = "The car model is " + carObj1.model + " and the make is " + carObj1.make + " year " + carObj1.year;
+	document.getElementById("demo1").innerHTML = "The car model is " + carObj2.model + " and the make is " + carObj2.make + " year " + carObj2.year;
+</script>
+
+</body>
+</html>
