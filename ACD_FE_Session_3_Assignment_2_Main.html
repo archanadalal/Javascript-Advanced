@@ -1,0 +1,40 @@
+function cal(x,y){
+	
+	this.num1 = x;
+	this.num2 = y;
+	
+	this.addition = function(){
+		 var result = this.num1 + this.num2;
+		 return "Addition of" + this.num1 +" and " + this.num2 +"is" + result;
+		
+		}
+	
+	this.subtraction = function(){
+		if(this.num1<this.num2){
+			var result = this.num2 - this.num1;			
+		}else{
+		var result = this.num1 - this.num2;}
+		return "Subtraction of " + this.num1 +" and " + this.num2 +" is" + result;	
+		}
+		
+	this.multiplication = function(){
+		var result = this.num1 * this.num2;
+		return "Multiplication of " + this.num1 +" and " + this.num2 +" is" + result;	
+		}
+		
+	this.division = function(){
+		if(this.num1<this.num2){
+			var result = this.num2 % this.num1;			
+		}else{
+		var result = this.num1 % this.num2;}
+		return " Division of " + this.num1 +" and " + this.num2 +" is" + result;	
+		}
+}
+var newCal = new cal(6,9);
+newCal.addition();
+newCal.subtraction();
+newCal.multiplication();
+newCal.division();
+
+
+
